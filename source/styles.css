@@ -1,0 +1,21 @@
+body {
+    text-align: center;
+    background-color: #EBE9E9;
+}
+
+h1 {
+    font-size: 18pt;
+    height: 60px;
+}
+
+button {
+    margin: 5px;
+}
+
+input {
+    width: 100%;
+}
+
+.answer {
+    font-size: 14pt;
+}

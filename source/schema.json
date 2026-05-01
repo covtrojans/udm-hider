@@ -1,0 +1,19 @@
+{
+    "type": "object",
+    "properties": {
+        "udmList": {
+            "title": "Allowed UDM Codes",
+            "description": "A list of UDM codes that are allowed in Google search results.",
+            "type": "array",
+            "items": {
+                "type": "string",
+                "title": "UDM Code"
+            }
+        },
+        "defaultUDM": {
+            "title": "Default UDM Code",
+            "description": "If a search URL doesn't include a UDM code, it will add this one to the URL.",
+            "type": "string"
+        }
+    }
+}

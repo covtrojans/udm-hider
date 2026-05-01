@@ -1,0 +1,29 @@
+{
+	"manifest_version": 3,
+	"name": "UDM Hider",
+	"version": "1.0",
+	"description": "Disallows specified UDM codes in Google searches.",
+	"update_url": "https://raw.githubusercontent.com/covtrojans/udm-hider/refs/heads/main/updates.xml",
+	"icons": {
+		"16": "whiscash-surprised.png",
+		"32": "whiscash-surprised.png",
+		"48": "whiscash-surprised.png",
+		"128": "whiscash-surprised.png"
+	},
+	"action": {
+		"default_popup": "popup.html"
+	},
+	"storage": {
+		"managed_schema": "schema.json"
+	},
+	"permissions": [
+		"storage"
+	],
+	"content_scripts": [
+		{
+			"js": ["udm-hider.js"],
+			"matches": ["https://www.google.com/search*"],
+			"run_at": "document_idle"
+		}
+	]
+}
