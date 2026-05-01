@@ -19,3 +19,8 @@ input {
 .answer {
     font-size: 14pt;
 }
+
+.disclaimer {
+    font-size: 6pt;
+    color: grey;
+}
